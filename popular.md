@@ -28,37 +28,31 @@ bigimg:
 
 <div class="list-filters">
   <a href="/" class="list-filter">All posts</a>
-  <a href="/popular" class="list-filter">Most Popular</a>
+  <span class="list-filter filter-selected">Most Popular</span>
   <a href="/tutorials" class="list-filter">Tutorials</a>
-  <a href="/tags" class="list-filter filter-selected">Index</a>
+  <a href="/tags" class="list-filter">Index</a>
 </div>
 
-{%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
-{%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
+<div class="posts-list">
+  {% for post in site.tags.popular %}
+  <article>
+    <a class="post-preview" href="{{ post.url | prepend: site.baseurl }}">
+	    <h2 class="post-title">{{ post.title }}</h2>
+	
+	    {% if post.subtitle %}
+	    <h3 class="post-subtitle">
+	      {{ post.subtitle }}
+	    </h3>
+	    {% endif %}
+      <p class="post-meta">
+        Posted on {{ post.date | date: "%B %-d, %Y" }}
+      </p>
 
-{%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-{%- endfor -%}
-
-<div id="full-tags-list">
-{%- for tag in tags_list -%}
-    <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-    </h2>
-    <div class="post-list">
-        {%- for post in site.tags[tag] -%}
-            <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
-                </div>
-            </div>
-        {%- endfor -%}
-    </div>
-{%- endfor -%}
+      <div class="post-entry">
+        {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
+        <span href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</span>
+      </div>
+    </a>  
+   </article>
+  {% endfor %}
 </div>
