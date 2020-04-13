@@ -7,4 +7,4 @@ gh-repo: omolazabal/
 gh-badge: [follow]
 ---
 
-Developing...
+Developing... Not really. This will get removed eventually when the actual first post gets released.
