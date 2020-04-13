@@ -1,17 +1,17 @@
 # --- General options --- #
 
 # Name of website
-title: My Shenanigans
+title: Not About My Life
 
 # Short description of your site
-description: A place where I put stuff so the internet can see it.
+description: A place where stuff gets put on internet.
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-url: "https://oscarolazabal.com"
+url: "https://notaboutmy.life"
 
 # baseurl should be an empty string
 #baseurl: ""
@@ -20,8 +20,8 @@ url: "https://oscarolazabal.com"
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "http://oscarolazabal.com"
-  About Me: "aboutme"
+  Home: "http://notaboutmy.life"
+  About: "about"
   Resources:
     - My Dotfiles: "https://github.com/omolazabal/dotfiles"
     - Learn Vim: "https://www.openvim.com/"
@@ -94,7 +94,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "OscarOlazabal.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "NotAboutMy.Life"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
