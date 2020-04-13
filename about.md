@@ -21,4 +21,6 @@ The important thing to extract from all that is this website will consists of ra
 
 Hopefully your topics of interest align with mine... if not, then I am sorry I've failed you.
 
-You also be asking, "Why did you create this website?". To be honest, I don't have a specific reason as to why. It could be because, at the time of writing this, I am in the midst of the [2019-2020 Coronavirus Pandemic](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic) and have a little extra time on my hands due to the quarantine. Or because people always tend to ask me how I did "X" and I enjoy explaining things. Or maybe it is simply because I told myself "why not?". Regardless, hopefully I create at least one post that you'll find interesting.
+You also be asking, "Why did you create this website?". To be honest, I don't have a specific reason as to why. It could be because, at the time of writing this, I am in the midst of the [2019-2020 Coronavirus Pandemic](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic) and have a little extra time on my hands due to the quarantine. Or because people always tend to ask me how I did "X" and I enjoy explaining things. Or maybe it is simply because, at the moment of making the website live, it was almost 4:00 AM and I was not thinking straight.
+
+Regardless, hopefully I create at least one post that you'll find interesting.
