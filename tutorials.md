@@ -28,7 +28,6 @@ bigimg:
 
 <div class="list-filters">
   <a href="/" class="list-filter">All posts</a>
-  <a href="/popular" class="list-filter">Most Popular</a>
   <span class="list-filter filter-selected">Tutorials</span>
   <a href="/tags" class="list-filter">Index</a>
 </div>
