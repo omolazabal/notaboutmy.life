@@ -27,7 +27,7 @@ Well... It's based off of random things I find interesting. I used the pronoun "
 
 <center>
 <img src="/img/oscar.png" width="128">
-This is what "I" kinda looks like.
+This is what "I" looks like.
 </center>
 
 "I" is me, and me is Oscar Olazabal. That's pronounced "Ola-Za-Ball". It's Spanish and apparently there is a professional [Spanish golfer](https://en.wikipedia.org/wiki/Jos%C3%A9_Mar%C3%ADa_Olaz%C3%A1bal) with the same last name. [Here](https://en.wikipedia.org/wiki/Olaz%C3%A1bal) is some more notable people with the surname Olazabal, if you'd like to waste a little bit of time.
