@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Brain Dump
 use-site-title: true
+title: " "
 css: "/css/index.css"
 ---
 
