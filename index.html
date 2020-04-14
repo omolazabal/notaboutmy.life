@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Brain Dump
-subtitle: Random Stuff I Felt Like Writting
 use-site-title: true
 css: "/css/index.css"
 ---
