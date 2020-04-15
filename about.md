@@ -26,7 +26,7 @@ bigimg:
 Well... It's based off of random things I find interesting. I used the pronoun "I"... so I guess I should elaborate a little on who "I" is.
 
 <center>
-<img src="/img/oscar.png" width="128">
+<img src="/img/oscar.png" width="80">
 This is what "I" looks like.
 </center>
 
