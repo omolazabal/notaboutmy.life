@@ -120,7 +120,7 @@ The output should be a video stream that looks something like this:
 <img src="/img/posts/2020-04-24-run-kinect-2-on-ubuntu-20-lts/freenectoutput.png" width="600">
 </center>
 
-## 2. Python Bindings
+## 5. Python Bindings
 Create a project directory.
 ```
 mkdir freenect2-test
