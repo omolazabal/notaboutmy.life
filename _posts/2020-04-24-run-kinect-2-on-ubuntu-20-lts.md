@@ -179,6 +179,7 @@ pip install wheel
 pip install numpy
 pip install cython
 pip install pylibfreenect2
+```
 
 Run a sample program
 ```
@@ -188,7 +189,7 @@ LIBFREENECT2_INSTALL_PREFIX=$HOME LD_LIBRARY_PATH=$HOME/freenect2/lib python mul
 ```
 You should see the following video feeds.
 <center>
-<img src="/img/posts/2020-04-24-run-kinect-2-on-ubuntu-20-lts/multiviewer.png">
+<img src="/img/posts/2020-04-24-run-kinect-2-on-ubuntu-20-lts/multiviewer.png" width="600">
 </center>
 
 ----
