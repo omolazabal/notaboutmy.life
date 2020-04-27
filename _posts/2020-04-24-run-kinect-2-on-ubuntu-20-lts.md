@@ -165,7 +165,7 @@ The output should resemble this:
 </center>
 
 ## 5.1 Alternative Python Bindings
-There are multiple python bindings out there. Another one is Pylibfreenect2. They both accopmlish the same thing, but use a slightly different API. You can view the API for Pylibfreenect2 [here](http://r9y9.github.io/pylibfreenect2/stable/api.html) and decide which one you like better.
+There are multiple python bindings out there. Another one is Pylibfreenect2. They both accomplish the same thing, but use a slightly different API. You can view the API for Pylibfreenect2 [here](http://r9y9.github.io/pylibfreenect2/stable/api.html) and decide which one you like better.
 
 Create an activate a virtual environment (optional)
 ```
@@ -198,3 +198,4 @@ You should see the following video feeds.
 - [Libfreenect2 API](https://openkinect.github.io/libfreenect2/)
 - [Libfreenect README.md Version fd64c5d9b214df6f6a55b4419357e51083f15d93](https://github.com/OpenKinect/libfreenect2/blob/fd64c5d9b214df6f6a55b4419357e51083f15d93/README.md)
 - [Freenect2 Python Package](https://github.com/rjw57/freenect2-python)
+- [Pylibfreenect2](https://github.com/r9y9/pylibfreenect2)
