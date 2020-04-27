@@ -121,12 +121,14 @@ The output should be a video stream that looks something like this:
 </center>
 
 ## 5. Python Bindings
-Create a project directory.
+We will be installing one of the many Python bindings for Libfreenect. This one is named Freenect2 and you can find its API [here](https://rjw57.github.io/freenect2-python/#module-freenect2). To use the bindings, first create a project directory.
 ```
 mkdir freenect2-test
 cd freenect2-test
 ```
 Next, set up and activate a virtual environment. In my opinion, this should be standard in your Python workflow as it allows you to work seamlessly with multiple package versions and it prevents you from polluting your main Python installation. You can skip this step if you are uncomfortable using virtual environments.
+
+Create the virtual environment
 ```
 sudo apt install python3-venv -y
 python3 -m venv .venv
@@ -160,6 +162,33 @@ pcl_viewer output.pcd
 The output should resemble this:
 <center>
 <img src="/img/posts/2020-04-24-run-kinect-2-on-ubuntu-20-lts/pcl.gif">
+</center>
+
+## 5.1 Alternative Python Bindings
+There are multiple python bindings out there. Another one is Pylibfreenect2. They both accopmlish the same thing, but use a slightly different API. You can view the API for Pylibfreenect2 [here](http://r9y9.github.io/pylibfreenect2/stable/api.html) and decide which one you like better.
+
+Create an activate a virtual environment (optional)
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install the dependencies and Pylibfreenect2
+```
+pip install wheel
+pip install numpy
+pip install cython
+pip install pylibfreenect2
+
+Run a sample program
+```
+pip install opencv-python
+wget https://raw.githubusercontent.com/r9y9/pylibfreenect2/master/examples/multiframe_listener.py
+LIBFREENECT2_INSTALL_PREFIX=$HOME LD_LIBRARY_PATH=$HOME/freenect2/lib python multiframe_listener.py
+```
+You should see the following video feeds.
+<center>
+<img src="/img/posts/2020-04-24-run-kinect-2-on-ubuntu-20-lts/multiviewer.png">
 </center>
 
 ----

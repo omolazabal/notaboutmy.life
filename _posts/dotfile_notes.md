@@ -140,8 +140,8 @@ VSCode
             - wget https://raw.githubusercontent.com/omolazabal/dotfiles-mac/master/zsh/.zshrc -P ~/dotfiles/zsh
             - rm ~/.zshrc
             - ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
-            - brew install npm
-            - sudo npm install --global pure-prompt
+            - mkdir -p "$HOME/.zsh"
+            - git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
             - brew install autojump
             - git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
             - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -151,8 +151,8 @@ VSCode
             - wget https://raw.githubusercontent.com/omolazabal/dotfiles-linux/master/zsh/.zshrc -P ~/dotfiles/zsh
             - rm ~/.zshrc
             - ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
-            - sudo apt install npm -y
-            - sudo npm install --global pure-prompt
+            - mkdir -p "$HOME/.zsh"
+            - git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
             - sudo apt install autojump -y
             - git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
             - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
