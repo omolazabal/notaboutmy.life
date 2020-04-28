@@ -8,54 +8,38 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Chirpy                          # the main title
-
-tagline: A text-focused Jekyll theme.  # it will display as the sub-title
-
-description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
-
-# Replace with the website url, e.g. 'https://username.github.io'
-url: 'protocol://domain'
-
-author: your_full_name                  # change to your full name
-
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
-
+title: NAML
+tagline: Not About My Life
+description: >-
+  A hub for posts regarding
+  software, reserach, music,
+  and more.
+url: 'https://notaboutmy.life'
+author: Oscar Olazabal
+avatar: /assets/img/logos/logo.png
 github:
-  username: github_username             # change to your github username
-
+  username: omolazabal
 twitter:
-  username: twitter_username            # change to your twitter username
-
+  username: oscarmolazabal
 social:
-  name: your_full_name                  # it will shows as the copyright owner in Footer
-  email: example@doamin.com             # change to your email address
+  name: Oscar Olazabal
+  email: oscarolazabal.dev@gmail.com
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
-
+    - https://github.com/omolazabal
+    - https://www.linkedin.com/in/oscar-olazabal
 google_site_verification: google_meta_tag_verification # change to your verification string
 
 #--------------------------
-
 # if your site type is Project Pages site, change below value to '/projectname'
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: America/Los_Angeles
 
 google_analytics:
-  # Fill with your Google Analytics ID
-  id: ''
-  # The Google Analytics pageviews switch.
+  id: 'UA-162892357-1'
 
+  # The Google Analytics pageviews switch.
   pv:
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
     enabled: false
@@ -65,8 +49,8 @@ google_analytics:
     cache: false  # pv data local cache, good for the users from GFW area.
 
 disqus:
-  comments: false  # boolean type, the global switch for posts comments.
-  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  comments: true
+  shortname: 'oscarolazabal'
 
 
 # Prefer color scheme setting, available values:
@@ -82,13 +66,9 @@ theme_mode: dual
 
 # boolean type, global switch for ToC in posts.
 toc: true
-
 paginate: 10
-
 markdown: kramdown
-
 highlighter: rouge
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
@@ -100,9 +80,7 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-
 permalink: /posts/:title/
-
 defaults:
   -
     scope:
