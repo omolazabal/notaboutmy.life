@@ -1,7 +1,7 @@
 ---
 title: Maintaining Your Dotfiles 
 categories: [Tutorial, Unix]
-tags: [tutorial, software, dotfiles]
+tags: [tutorial, software, unix, linux, mac]
 ---
 
 # Overview
@@ -32,7 +32,7 @@ Next we'll be looking into how you can safely move your dotfiles into your `dotf
 Symbolic links are files that point to another file. They are different from hard links as they do not contain any data associated with the file being pointed to. We will be leveraging symbolic links to place our dotfiles into our `dotfiles` repository without breaking anything.
 
 Symbolic links are created with the following command pattern.
-```shell
+```console
 ln -s source_file link_file
 ```
 Where `source_file` represents existing dotfile, and `link_file` represents the new file that will be pointing to your existing dotfile.
@@ -44,7 +44,7 @@ To safely move our existing dotfiles without breaking anything we want to
 This way, whenever the program needs to utilize your dotfile, it will reference it from its new location.
 
 For example, to link your `.bash_rc` file, you would want to perform the following:
-```shell
+```console
 mkdir ~/dotfiles/bash                        # Create a directory to hold your new dotfile (optional)
 mv ~/.bash_rc ~/dotfiles/bash                # Move the dotfile from its origin to the dotfile repository
 ln -s ~/dotfiles/bash/.bash_rc ~/.bash_rc    # Create a link to the dotfile. Place it in the dotfile's original location
@@ -73,71 +73,71 @@ Below I present how to install my dotfiles. Be sure to take a look at them first
 ## Git
 ### Mac
 #### Install
-```
+```console
 run xcode-select --install
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 #### Configure
+```console
+mkdir -p ~/dotfiles/git
+wget https://raw.githubusercontent.com/omolazabal/dotfiles-mac/master/git/.gitconfig -P ~/dotfiles/git
+rm ~/.gitconfig
+ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 ```
- mkdir -p ~/dotfiles/git
- wget https://raw.githubusercontent.com/omolazabal/dotfiles-mac/master/git/.gitconfig -P ~/dotfiles/git
- rm ~/.gitconfig
- ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
- ```
 
 ### Linux
 #### Install
-```
+```console
 sudo apt install git -y
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 #### Configure
+```console
+mkdir -p ~/dotfiles/git
+wget https://raw.githubusercontent.com/omolazabal/dotfiles-linux/master/git/.gitconfig -P ~/dotfiles/git
+rm ~/.gitconfig
+ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 ```
- mkdir -p ~/dotfiles/git
- wget https://raw.githubusercontent.com/omolazabal/dotfiles-linux/master/git/.gitconfig -P ~/dotfiles/git
- rm ~/.gitconfig
- ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
- ```
 
 
 ## Tmux
 ### Mac
 #### Install
-```
+```console
 brew install tmux
 ```
 #### Configure
+```console
+mkdir -p ~/dotfiles/tmux
+wget https://raw.githubusercontent.com/omolazabal/dotfiles-mac/master/tmux/.tmux.conf -P ~/dotfiles/tmux
+rm ~/.tmux.conf
+ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ```
- mkdir -p ~/dotfiles/tmux
- wget https://raw.githubusercontent.com/omolazabal/dotfiles-mac/master/tmux/.tmux.conf -P ~/dotfiles/tmux
- rm ~/.tmux.conf
- ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
- ```
 
 
 ### Linux
 #### Install
-```
+```console
 sudo apt install tmux -y
 ```
 #### Configure
+```console
+mkdir -p ~/dotfiles/tmux
+wget https://raw.githubusercontent.com/omolazabal/dotfiles-linux/master/tmux/.tmux.conf -P ~/dotfiles/tmux
+rm ~/.tmux.conf
+ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ```
- mkdir -p ~/dotfiles/tmux
- wget https://raw.githubusercontent.com/omolazabal/dotfiles-linux/master/tmux/.tmux.conf -P ~/dotfiles/tmux
- rm ~/.tmux.conf
- ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
- ```
 
 ## Vim
 ### Mac
 #### Install
-```
+```console
 brew install vim
 ```
 #### Configure
-```
+```console
 mkdir -p ~/dotfiles/vim
 wget https://raw.githubusercontent.com/omolazabal/dotfiles-mac/master/vim/.vimrc -P ~/dotfiles/vim
 rm ~/.vimrc
@@ -145,11 +145,11 @@ ln -s ~/dotfiles/vim/.vimrc ~/.vimrc
 ```
 ### Linux
 #### Install
-```
+```console
 sudo apt install vim -y
 ```
 #### Configure
-```
+```console
 mkdir -p ~/dotfiles/vim
 wget https://raw.githubusercontent.com/omolazabal/dotfiles-linux/master/vim/.vimrc -P ~/dotfiles/vim
 rm ~/.vimrc
@@ -162,15 +162,16 @@ ln -s ~/dotfiles/vim/.vimrc ~/.vimrc
 - visit https://code.visualstudio.com/download
 - Double click zip file to unzip
 - Drag the .app file into you Applications folder
+
 #### Configure
-```
+```console
 mkdir -p ~/dotfiles/vscode
 wget https://raw.githubusercontent.com/omolazabal/dotfiles-mac/master/vscode/settings.json -P ~/dotfiles/vscode
 rm ~/Library/Application Support/Code/User/settings.json
 ln -s ~/dotfiles/vscode/settings.json ~/Library/Application Support/Code/User/settings.json
 ```
 
-```
+```console
 wget https://raw.githubusercontent.com/omolazabal/dotfiles-mac/master/vscode/keybindings.json -P ~/dotfiles/vscode
 rm ~/Library/Application Support/Code/User/keybindings.json
 ln -s ~/dotfiles/vscode/keybindings.json ~/Library/Application Support/Code/User/keybindings.json
@@ -180,13 +181,15 @@ ln -s ~/dotfiles/vscode/keybindings.json ~/Library/Application Support/Code/User
 #### Install
 - visit https://code.visualstudio.com/download
 - run `sudo dpkg -i <filename>` on your installation
+
 #### Configure
-```
+```console
 mkdir -p ~/dotfiles/vscode
 wget https://raw.githubusercontent.com/omolazabal/dotfiles-linux/master/vscode/settings.json -P ~/dotfiles/vscode
 rm ~/.config/Code/User/settings.json
 ln -s ~/dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
-
+```
+```console
 wget https://raw.githubusercontent.com/omolazabal/dotfiles-linux/master/vscode/keybindings.json -P ~/dotfiles/vscode
 rm ~/.config/Code/User/keybindings.json
 ln -s ~/dotfiles/vscode/keybindings.json ~/.config/Code/User/keybindings.json
@@ -195,13 +198,13 @@ ln -s ~/dotfiles/vscode/keybindings.json ~/.config/Code/User/keybindings.json
 ## ZSH
 ### Mac
 #### Install
-```
+```console
 brew install zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # Make it the default shell
 ```
 #### Configure
-```
+```console
 mkdir -p ~/dotfiles/zsh
 wget https://raw.githubusercontent.com/omolazabal/dotfiles-mac/master/zsh/.zshrc -P ~/dotfiles/zsh
 rm ~/.zshrc
@@ -215,13 +218,13 @@ source ~/.zshrc
 ```
 ### Linux
 #### Install
-```
+```console
 sudo apt install zsh -y
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # Make it the default shell
 ```
 #### Configure
-```
+```console
 mkdir -p ~/dotfiles/zsh
 wget https://raw.githubusercontent.com/omolazabal/dotfiles-linux/master/zsh/.zshrc -P ~/dotfiles/zsh
 rm ~/.zshrc
@@ -232,3 +235,4 @@ sudo apt install autojump -y
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 source ~/.zshrc
+```
