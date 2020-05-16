@@ -10,6 +10,8 @@ In this tutorial we will be going over how to:
 2. Use Python 3 to interface with the Kinect 2
 3. Configure CUDA to work with the drivers
 
+
+# Introduction  
 The Kinect 2 offers the ability to perform interesting computer vision (CV) tasks at a low cost (typically $30-$40 used at your local game store). It is capable of performing depth imaging, gesture recognition, and joint tracking. To gain access to all of these features on Linux, however, it'll take a bit of tinkering as Microsoft built the Kinect 2 with the Xbox One and Windows in mind.
 
 Fortunately, the community at [OpenKinect](https://openkinect.org/wiki/Main_Page) have created open source drivers for us. The drivers gives us access to the RGB and Depth functionalities of the Kinect 2. It does not, however, give us access to the gesture recognition and join tracking functionalities. If the natural-user-interface (NUI) features interest you, I recommend looking into OpenNI2 and NiTE2.2. At first glance, this [guide](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-openni-nite.md) might deem helpful, but I cannot confirm it'll work on Ubuntu 20.04 LTS. For now, this tutorial will only cover the installation of the Libfreenect drivers.
@@ -113,7 +115,8 @@ Finally, replug the Kinect and run the test program. The test program can be fou
 ./bin/Protonect
 ```
 
-The output should be a video stream that looks something like this:
+The output should be a video stream that looks something like this:  
+
 <img src="/assets/img/posts/2020-04-24-run-kinect-2-on-ubuntu-20-lts/freenectoutput.png" width="600">
 
 ## 5. Python Bindings
@@ -151,7 +154,8 @@ python dump_pcd.py
 pcl_viewer output.pcd
 ```
 
-The output should resemble this:
+The output should resemble this:  
+
 <img src="/assets/img/posts/2020-04-24-run-kinect-2-on-ubuntu-20-lts/pcl.gif">
 
 ## 5.1 Alternative Python Bindings
@@ -177,7 +181,8 @@ pip install opencv-python
 wget https://raw.githubusercontent.com/r9y9/pylibfreenect2/master/examples/multiframe_listener.py
 LIBFREENECT2_INSTALL_PREFIX=$HOME LD_LIBRARY_PATH=$HOME/freenect2/lib python multiframe_listener.py
 ```
-You should see the following video feeds.
+You should see the following video feeds.  
+
 <img src="/assets/img/posts/2020-04-24-run-kinect-2-on-ubuntu-20-lts/multiviewer.png" width="600">
 
 ----
