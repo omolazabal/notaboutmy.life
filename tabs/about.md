@@ -11,10 +11,7 @@ This is what "I" looks like.
 </center>
 <br />
 
-"I" is me, and me is Oscar Olazabal. That's pronounced "Ola-Za-Ball". It's Spanish and apparently there is a professional [Spanish golfer](https://en.wikipedia.org/wiki/Jos%C3%A9_Mar%C3%ADa_Olaz%C3%A1bal) with the same last name. [Here](https://en.wikipedia.org/wiki/Olaz%C3%A1bal) is some more notable people with the surname Olazabal, if you'd like to waste a little bit of time.
-
-
-Anyways, I'm a 23 year-old guy who enjoys making things and teaching people. I assume this is because I spent a lot of my youth playing video games that spark creativity (Halo 3's Forge, Minecraft, Guitar Hero, Little Big Planet, to name a few) and being very helpful and expressive about them on various online forums. I say "expressive," but I really mean being a typical angry internet child. That is not too important, however.
+"I" is me, and me is Oscar Olazabal. That's pronounced "Ola-Za-Ball". I'm a 23 year-old guy who enjoys making things and teaching people. I assume this is because I spent a lot of my youth playing video games that spark creativity (Halo 3's Forge, Minecraft, Guitar Hero, Little Big Planet, to name a few) and being very helpful and expressive about them on various online forums. I say "expressive," but I really mean being a typical angry internet child. That is not too important, however.
 
 <center>
 <img src="/assets/img/about/childhood.png" width="400">
