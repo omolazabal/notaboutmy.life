@@ -181,9 +181,7 @@ pip install opencv-python
 wget https://raw.githubusercontent.com/r9y9/pylibfreenect2/master/examples/multiframe_listener.py
 LIBFREENECT2_INSTALL_PREFIX=$HOME LD_LIBRARY_PATH=$HOME/freenect2/lib python multiframe_listener.py
 ```
-You should see the following video feeds.  
-
-<img src="/assets/img/posts/2020-04-24-run-kinect-2-on-ubuntu-20-lts/multiviewer.png" width="600">
+You should see a video feed output similar to the one when running Protonect.
 
 ----
 
